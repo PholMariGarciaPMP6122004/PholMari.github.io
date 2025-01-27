@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <link rel="S1TECH" href="S1.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>PHOL MARI P. GARCIA</h1>
+            <p>Student</p>
+        </header>
+
+        <div class="profile">
+            <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/366008213_1068120381233314_3488342596867443799_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEKZ7nJwMy4jLySqdRvspsEEpYTES-GivISlhMRL4aK8pVl9HjVoPXf_sikEfs0zZdPUh3hhUQnvKU_KzLO-hyC&_nc_ohc=85LlyeyRHCoQ7kNvgH0QOKW&_nc_oc=AdjudmKTj3D0u5HMcfDBhi6mpd3fySEITXsLcxImB-ibtmg1nXq4OVDLWx9R3SB1Sl0&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&_nc_gid=AKlV-lgmoSYWtqqZIUdcZT8&oh=00_AYBa5jhec5pDpX3v1_SZeOPclLJYkM2ZosKB9GCRVDKHhg&oe=679D1AFF"
+                alt="Profile Picture">
+            <div class="info">
+                <h2>Profile</h2>
+                <p>Hello, I'm Phol Mari P. Garcia. I was born in Visayas but grew up here in Luzon, and I'm
+                    from Malolos Bulacan. I don't really have anything to say about myself since most of
+                    my life was eaten by my hobbies which are collecting gurines, watching anime, and
+                    playing games. As of now I've nished watching 4,916 anime series and it's still rising
+                    every week, if you want to talk about anything anime related I'm here. Once again I'm
+                    Phol Mari P. Garcia from BSITBA.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <ul class="contact">
+                <li><span class="icon">🏠</span> Location: Manila City</li>
+                <li><span class="icon">📞</span> Mobile Number: 09331757218</li>
+                <li><span class="icon">📧</span> Email Address: 202310496@fit.edu.ph</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Socials</h2>
+            <ul class="socials">
+                <li><span class="icon">💼</span> Briefcase: 694013202T</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Educational Qualification</h2>
+            <ul>
+                <li>Secondary: Marcelo H. del Pilar National High School (2017 - 2023)</li>
+                <li>Primary: CMIS Sto. Rosario (2012 - 2017)</li>
+                <li>Preschool: St. Vincent Learning Center of Manila (2009 - 2011)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Honors and Awards</h2>
+            <ul class="awards">
+                <li>July 07, 2023 - With Honors 1st Quarter - 4th Quarter Grade 12</li>
+                <li>May 05, 2022 - With High Honors Grade 11 Fourth Quarter</li>
+                <li>September 09, 2021 - With Honors 1st Quarter - 3rd Quarter Grade 11</li>
+                <li>January 01, 2020 - With Honors 1st Quarter - 4th Quarter Grade 9</li>
+                <li>August 08, 2019 - With honors 1st Quarter - 4th Quarter Grade 10</li>
+                <li>April 04, 2018 - With Honors 1st Quarter - 4th Quarter Grade 8</li>
+                <li>May 05, 2017 - With honors 1st Quarter - 4th Quarter Grade 7</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills">
+                <li>
+                    Web Design
+                    <div class="bar"><span style="width: 60%;"></span></div>
+                </li>
+                <li>
+                    C++
+                    <div class="bar"><span style="width: 50%;"></span></div>
+                </li>
+                <li>
+                    Photoshop
+                    <div class="bar"><span style="width: 40%;"></span></div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="button-container">
+            <button onclick="toggleMode()">Toggle Mode</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleMode() {
+            const container = document.querySelector('.container');
+            const body = document.querySelector('body');
+            container.classList.toggle('dark-mode');
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
+</html>
