@@ -131,7 +131,7 @@ body {
 
 .info-container {
     position: absolute;
-    bottom: 0;
+    top: 270px; 
     left: 0;
     width: 100%;
     max-width: none;
@@ -144,8 +144,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    display: none;
     visibility: hidden;
+    margin-top: 20px; 
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        top: 300px; 
+    }
 }
 
 .info-label {
