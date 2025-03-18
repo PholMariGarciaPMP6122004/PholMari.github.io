@@ -130,12 +130,13 @@ body {
 }
 
 .info-container {
-    position: absolute;
-    top: 270px; 
+    position: absolute; /* Ensure it overlaps */
+    top: 0; /* Align to the top of the restaurant section */
     left: 0;
     width: 100%;
-    max-width: none;
-    background: white;
+    height: 100%; /* Make it the same height as the section */
+    max-height: 100%; /* Prevent it from exceeding the image height */
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
     padding: 40px;
     border-radius: 8px;
     display: none;
@@ -145,20 +146,13 @@ body {
     align-items: center;
     justify-content: flex-start;
     visibility: hidden;
-    margin-top: 20px; 
 }
 
-@media (max-width: 768px) {
-    .info-container {
-        top: 300px; 
-    }
-}
 
 .info-label {
     writing-mode: vertical-rl;
     background: yellow;
     padding: 20px;
-    height: 37%;
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
@@ -200,4 +194,26 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
     color: black;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .info-container {
+        width: 95%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-content {
+        flex-direction: column;
+    }
+
+    .info-content img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .info-text {
+        width: 100%;
+    }
 }
