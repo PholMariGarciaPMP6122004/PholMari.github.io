@@ -92,7 +92,8 @@ body {
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 100%; 
+    display: block; 
     border-radius: 10px;
 }
 
@@ -130,19 +131,19 @@ body {
 }
 
 .info-container {
+    top: 0px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    width: 95%;
-    max-width: 1200px;
+    width: 100vw; 
     padding: 20px;
     position: absolute;
-    top: 120px; /* Ensures it's below the "MAIN MENU" */
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0; 
+    transform: none; 
     z-index: 1000;
+    box-sizing: border-box; 
 }
 
 .info-content {
