@@ -34,15 +34,22 @@ document.addEventListener("DOMContentLoaded", function () {
         const infoContainer = document.getElementById("restaurant-info");
         infoContainer.style.display = "flex";
         infoContainer.style.visibility = "visible";
+        document.body.style.overflow = "hidden"; 
+    
+        setTimeout(() => {
+            infoContainer.style.opacity = "1";
+        }, 50);
     }
     
-
     function hideInfo() {
         const infoContainer = document.getElementById("restaurant-info");
-        infoContainer.style.display = "none";
-        infoContainer.style.visibility = "hidden";
-    }
+        infoContainer.style.opacity = "0";
     
+        setTimeout(() => {
+            infoContainer.style.display = "none";
+            document.body.style.overflow = "auto"; 
+        }, 300);
+    }
 
     document.querySelectorAll(".restaurant-card").forEach(card => {
         card.addEventListener("click", function () {
