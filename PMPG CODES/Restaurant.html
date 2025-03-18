@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Resta.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <div class="title-section">
+                <h1 class="title">BEST OF MERIDDIEN</h1>
+                <h2 class="subtitle">RESTAURANT GUIDE</h2>
+                <h5 class="producer">PRODUCED BY: LOCAL MAGAZINE</h5>
+            </div>
+        </div>
+
+        <button class="btn btn-warning main-menu-btn" onclick="hideInfo()">MAIN MENU</button>
+
+        <div class="content">
+            <div class="restaurant-section">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card restaurant-card" data-id="gabel-loffel">
+                            <div class="card-title">GABEL LOFFEL</div>
+                            <img src="Main course.jpg" class="card-img-top" alt="Gabel Loffel">
+                            <div class="hover-text">Traditional dishes with a modern twist.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card restaurant-card" data-id="gary-gari">
+                            <div class="card-title">GARY GARI</div>
+                            <img src="Side Dish.jpg" class="card-img-top" alt="Gary Gari">
+                            <div class="hover-text">Experience authentic flavors from Japan.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card restaurant-card" data-id="il-piatto">
+                            <div class="card-title">IL PIATTO</div>
+                            <img src="Drinks.jpg" class="card-img-top" alt="Il Piatto">
+                            <div class="hover-text">Freshly made pasta and Italian delights.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card restaurant-card" data-id="pierre-platters">
+                            <div class="card-title">PIERRE PLATTERS</div>
+                            <img src="Sweets.jpg" class="card-img-top" alt="Pierre Platters">
+                            <div class="hover-text">Delicious seafood and grilled specialties.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="restaurant-info" class="info-container">
+                <div class="info-label">RESTAURANT</div>
+                <div class="info-content">
+                    <img id="info-image" src="" alt="Restaurant Image">
+                    <div class="info-text">
+                        <h2 id="info-title"></h2>
+                        <p id="info-description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="urant.js"></script>
+</body>
+
+</html>
